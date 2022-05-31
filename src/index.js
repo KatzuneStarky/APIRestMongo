@@ -1,6 +1,6 @@
 const express = require("express")
 const mongoose = require("mongoose")
-require("dotenv").config()
+require("dotenv").config({ encoding: 'latin1'})
 const userRoutes = require("./Routes/user.routes")
 const seriesRoutes = require("./Routes/series.routes")
 
