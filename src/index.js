@@ -1,6 +1,7 @@
 const express = require("express")
 const mongoose = require("mongoose")
 require("dotenv").config({ encoding: 'latin1'})
+const cors = require("cors")
 const userRoutes = require("./Routes/user.routes")
 const seriesRoutes = require("./Routes/series.routes")
 
@@ -9,6 +10,7 @@ const port = process.env.PORT || 9000
 
 // Middleware
 app.use(express.json())
+app.use(cors({ origin: '*'}))
 app.use('/api', userRoutes)
 app.use('/api', seriesRoutes)
 
