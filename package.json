@@ -1,13 +1,9 @@
 {
   "name": "apirestmongo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon src/index.js"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "Servicio Backend para la website series mania",
+  "main": "src/index.js",
+  "author": "KatzuneStarky",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -17,6 +13,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.5",
     "nodemailer": "^6.7.5"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
