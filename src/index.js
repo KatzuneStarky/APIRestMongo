@@ -10,6 +10,7 @@ const errorHandler = require("./Middleware/error")
 
 const app = express()
 const port = process.env.PORT || 9000
+console.log({port})
 
 // Middleware
 app.use(express.json())
